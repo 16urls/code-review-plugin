@@ -56,7 +56,11 @@ git clone https://github.com/16urls/code-review-plugin.git
 在 Claude Code 会话中把本地目录注册为 marketplace 后安装：
 
 ```bash
-> /plugin marketplace add /absolute/path/to/code-review-plugin
+# 注意：marketplace add 需要的是上一步 clone 出的本地仓库绝对路径
+# 也就是你执行 git clone 时所在目录下的 code-review-plugin/ 子目录
+# 例如 macOS/Linux: /Users/alice/code-review-plugin
+# 例如 Windows:    C:\Users\Alice\code-review-plugin
+> /plugin marketplace add <上一步 clone 出的本地仓库绝对路径>
 > /plugin install code-review-plugin@16urls
 ```
 

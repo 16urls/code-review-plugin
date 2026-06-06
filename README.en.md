@@ -56,7 +56,11 @@ git clone https://github.com/16urls/code-review-plugin.git
 Then register the local directory as a marketplace and install:
 
 ```bash
-> /plugin marketplace add /absolute/path/to/code-review-plugin
+# Note: `marketplace add` expects the absolute path of the repo you just cloned
+# i.e. the code-review-plugin/ subdirectory under wherever you ran `git clone`
+# Example (macOS/Linux): /Users/alice/code-review-plugin
+# Example (Windows):     C:\Users\Alice\code-review-plugin
+> /plugin marketplace add <absolute path of the cloned repo>
 > /plugin install code-review-plugin@16urls
 ```
 
