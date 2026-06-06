@@ -25,9 +25,11 @@ code-review-plugin/
 在 Claude Code 会话中执行：
 
 ```bash
-> /plugin marketplace add https://github.com/16urls/code-review-plugin
-> /plugin install code-review-plugin
+> /plugin marketplace add 16urls/code-review-plugin
+> /plugin install code-review-plugin@code-review-plugin
 ```
+
+> 也可以使用完整 URL：`/plugin marketplace add https://github.com/16urls/code-review-plugin`
 
 ### 方式二：本地开发测试
 
@@ -39,8 +41,10 @@ git clone https://github.com/16urls/code-review-plugin.git
 
 ```bash
 > /plugin marketplace add /absolute/path/to/code-review-plugin
-> /plugin install code-review-plugin
+> /plugin install code-review-plugin@code-review-plugin
 ```
+
+> 安装命令格式为 `<插件名>@<marketplace 名>`。由于本插件与 marketplace 同名，所以两侧都是 `code-review-plugin`。
 
 ## 🛠 使用方法
 
@@ -63,6 +67,20 @@ Skill 会根据上下文自动加载。在 Claude Code 会话中直接说：
 - "帮我做一下代码审查"
 
 Claude 会自动加载 `code-review` skill，对当前代码上下文进行审查，并输出结构化报告。如需强制触发，也可以在提示中明确说 "用 code-review skill 审查 …"。
+
+## 🖼 使用演示
+
+调用 `/code-review` 后的实际效果：
+
+![调用 code-review 命令](docs/images/usage-slash-1.png)
+
+Skill 自动加载并分析代码：
+
+![Skill 分析过程](docs/images/usage-slash-2.png)
+
+输出结构化的审查报告：
+
+![审查报告示例](docs/images/usage-slash-3.png)
 
 ## 📊 审查维度
 
