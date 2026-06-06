@@ -1,12 +1,15 @@
 {
   "name": "code-review-plugin",
   "displayName": "Code Review",
-  "description": "AI-powered code review skill for Claude Code",
+  "description": "AI-powered code review skill for Claude Code. Auto-detects git diff and produces a structured Markdown report with severity-tagged findings and fix snippets.",
   "version": "1.0.0",
   "license": "MIT",
-  "keywords": ["code-review", "security", "lint", "skill"],
+  "keywords": ["code-review", "security", "lint", "skill", "diff", "static-analysis"],
   "author": {
-    "name": "16urls"
+    "name": "16urls",
+    "url": "https://github.com/16urls"
   },
-  "repository": "https://github.com/16urls/code-review-plugin"
+  "homepage": "https://github.com/16urls/code-review-plugin",
+  "repository": "https://github.com/16urls/code-review-plugin",
+  "bugs": "https://github.com/16urls/code-review-plugin/issues"
 }

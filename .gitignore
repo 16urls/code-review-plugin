@@ -1,0 +1,16 @@
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Claude Code local cache (if any)
+.claude/cache/

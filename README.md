@@ -1,21 +1,37 @@
 # 🧠 Code Review Plugin for Claude Code
 
-> 一个为 **Claude Code** 打造的 AI 代码审查插件，用于在本地、团队协作或 CI 场景中，自动化地发现代码中的潜在问题，并输出结构化、可执行的审查报告。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-blue)](https://docs.claude.com/claude-code)
 
-> ⚠️ 本仓库内容由 [腾讯元宝](https://yuanbao.tencent.com/) 生成，作者已实测可用；但不对其安全性作任何担保，使用前请自行评估风险。
+> 一个为 **Claude Code** 打造的 AI 代码审查插件。在本地、团队协作或 CI 场景下，自动发现代码中的潜在问题，输出结构化、可执行的审查报告。
 
-## 📦 插件内容
+**English version**: [README.en.md](README.en.md)
+
+## ✨ 特性
+
+- 🔍 **零配置** — 安装即用，自动识别 git diff
+- 🛡 **本地运行** — 不依赖任何外部服务，代码不出本机
+- 🌐 **多语言** — TypeScript / JavaScript / Python / Go / Rust / PHP 等主流语言
+- 📊 **结构化输出** — 按严重程度分级的 Markdown 表格 + 修复代码片段
+- ⚡ **多种触发方式** — 斜杠命令 / 自然语言 / Skill 自动加载
+
+## 📦 插件结构
 
 本插件采用 Claude Code 官方推荐的 Plugin 结构：
 
 ```text
 code-review-plugin/
 ├── .claude-plugin/
-│   └── plugin.json           # 插件元信息
+│   ├── plugin.json           # 插件元信息
+│   └── marketplace.json      # 插件市场清单
 ├── skills/
 │   └── code-review/
 │       └── SKILL.md          # 代码审查 Skill
-└── README.md                 # 本文档
+├── docs/
+│   └── images/               # 使用演示截图
+├── CHANGELOG.md
+├── LICENSE
+└── README.md
 ```
 
 ## 🚀 安装方式
@@ -127,4 +143,10 @@ GitHub 仓库：https://github.com/16urls/code-review-plugin
 
 ## 📄 License
 
-MIT License
+[MIT License](LICENSE) © 2026 16urls
+
+## ⚠️ 免责声明
+
+- 本插件的 Skill 提示词初始版本由 [腾讯元宝](https://yuanbao.tencent.com/) 协助生成，作者已在多种语言项目中实测可用。
+- 代码审查结果**仅供参考**，不能替代人工 review 与专业安全审计。
+- 对于因使用本插件而产生的任何直接或间接损失，作者不承担责任，使用前请自行评估风险。
