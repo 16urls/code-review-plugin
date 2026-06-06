@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/favicon.ico" alt="Code Review Plugin logo" width="96"/>
+</p>
+
 # 🧠 Code Review Plugin for Claude Code
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

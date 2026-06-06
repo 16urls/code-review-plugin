@@ -13,5 +13,6 @@
   },
   "homepage": "https://github.com/16urls/code-review-plugin",
   "repository": "https://github.com/16urls/code-review-plugin",
-  "bugs": "https://github.com/16urls/code-review-plugin/issues"
+  "bugs": "https://github.com/16urls/code-review-plugin/issues",
+  "icon": "docs/images/favicon.ico"
 }
