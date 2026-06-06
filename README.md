@@ -26,7 +26,7 @@ code-review-plugin/
 
 ```bash
 > /plugin marketplace add 16urls/code-review-plugin
-> /plugin install code-review-plugin@code-review-plugin
+> /plugin install code-review-plugin@16urls
 ```
 
 > 也可以使用完整 URL：`/plugin marketplace add https://github.com/16urls/code-review-plugin`
@@ -41,10 +41,10 @@ git clone https://github.com/16urls/code-review-plugin.git
 
 ```bash
 > /plugin marketplace add /absolute/path/to/code-review-plugin
-> /plugin install code-review-plugin@code-review-plugin
+> /plugin install code-review-plugin@16urls
 ```
 
-> 安装命令格式为 `<插件名>@<marketplace 名>`。由于本插件与 marketplace 同名，所以两侧都是 `code-review-plugin`。
+> 安装命令格式为 `<插件名>@<marketplace 名>`。本仓库的 marketplace 名为 `16urls`（与 GitHub owner 一致），插件名为 `code-review-plugin`。
 
 ## 🛠 使用方法
 
