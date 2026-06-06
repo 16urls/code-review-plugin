@@ -14,7 +14,7 @@
       "name": "code-review-plugin",
       "source": ".",
       "description": "AI-powered code review skill for Claude Code",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "16urls"
       },
