@@ -1,0 +1,12 @@
+{
+  "name": "code-review-plugin",
+  "displayName": "Code Review",
+  "description": "AI-powered code review skill for Claude Code",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": ["code-review", "security", "lint", "skill"],
+  "author": {
+    "name": "16urls"
+  },
+  "repository": "https://github.com/16urls/code-review-plugin"
+}
